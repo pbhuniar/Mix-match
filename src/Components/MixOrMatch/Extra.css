@@ -1,0 +1,121 @@
+html,
+body {
+  min-height: 100vh;
+  background: rgb(159, 24, 24);
+  background: radial-gradient(
+    circle,
+    rgba(159, 24, 24, 1) 0%,
+    rgba(125, 23, 23, 1) 52%,
+    rgba(62, 9, 9, 0.9528186274509804) 100%
+  );
+
+  background: url("https://wallpapercave.com/wp/wp1808949.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.memory-game {
+  border: 1px solid red;
+}
+
+.Heroheader {
+  font-size: 6rem;
+  margin: 0px auto;
+  font-family: "Creepster", cursive;
+  color: #ff6d00;
+  background: black;
+}
+.maincontainer {
+  display: grid;
+
+  justify-content: center;
+}
+
+.infocontainer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #e18748;
+  font-size: 2em;
+}
+
+.card-color {
+  width: 8rem;
+  height: 10rem;
+
+  background: url("https://r1.ilikewallpaper.net/ipad-wallpapers/download/23827/Marvel-Logo-Background-ipad-wallpaper-ilikewallpaper_com.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 129px 156px;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-back-img1 {
+  width: 7.7rem;
+  height: 10rem;
+  z-index: -300;
+}
+.card-back-img2 {
+  width: 7.7rem;
+  height: 10rem;
+  z-index: 0;
+}
+.card-color.card-color-chng {
+  width: 8rem;
+  height: 10rem;
+  background-color: transparent !important;
+}
+.card {
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid red;
+  transition: 0.30s;
+}
+.card:active {
+  transform: rotateY(180deg);
+  transition: 0.25s;
+  background-size: contain;
+  background-color: black !important;
+}
+.switch-on-game {
+  margin-left: -28px;
+  padding: 71px;
+  cursor: pointer;
+}
+.modal-size-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .game-info-container {
+    align-items: center;
+  }
+  .heroimg {
+    width: 355px;
+    height: 114px;
+  }
+  .maincontainer {
+    justify-content: center;
+  }
+  .card {
+    cursor: pointer;
+    margin-top: 25px;
+    border: 2px solid red;
+    margin-left: 20px;
+  }
+  .infocontainer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .switch-on-game {
+    margin-left: -34px;
+    padding: 0px;
+    cursor: pointer;
+    width: 290px;
+    height: 63px;
+  }
+}

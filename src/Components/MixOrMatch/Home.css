@@ -1,0 +1,145 @@
+/* html,
+body {
+  min-height: 100vh;
+  background: rgb(159, 24, 24);
+  background: radial-gradient(
+    circle,
+    rgba(159, 24, 24, 1) 0%,
+    rgba(125, 23, 23, 1) 52%,
+    rgba(62, 9, 9, 0.9528186274509804) 100%
+  );
+  background: url("https://wallpapercave.com/wp/wp1808949.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.memory-game {
+  border: 1px solid red;
+}
+
+.Heroheader {
+  font-size: 6rem;
+  margin: 0px auto;
+  font-family: "Creepster", cursive;
+  color: #ff6d00;
+  background: black;
+}
+.maincontainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 15px;
+  margin: 15px auto;
+  justify-content: center;
+}
+
+.infocontainer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #e18748;
+  font-size: 2em;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+  height: 145px;
+  width: 120px;
+  transition: transform 0.2s;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(1, 0, 3);
+}
+
+.card:active {
+  transform: rotateY(180deg);
+  transition: transform 0.2s;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card_f,
+.card_b {
+  backface-visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* .cardf {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+<<<<<<< HEAD
+} */
+/* .imgfit {
+=======
+}
+
+.card_b {
+  background-color: transparent;
+  border-color: #ff6d00;
+  transform: rotateY(0);
+}
+
+.imgfit {
+>>>>>>> 23612a9f5fbd16360d58fe7145f1372169022ac1
+  align-self: flex-start;
+  transition: transform 100ms ease-in-out;
+  transform: translateY(-10px);
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+.card_f {
+  background-color: transparent;
+  border-color: #333;
+  transform: rotateY(180deg);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* .card_f:hover .card-value {
+  transform: scale(1);
+} */
+
+
+.card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  transform: scale(0.9);
+}
+
+.spider {
+  align-self: flex-start;
+  transition: transform 100ms ease-in-out;
+  transform: translateY(-10px);
+  padding-top: 21px !important;
+}
+.card_b {
+  background-color: transparent;
+  border-color: #ff6d00;
+  transform: rotateY(0);
+} 
+/* .card_b:hover .spider {
+  transform: translateY(0);
+} */
+
